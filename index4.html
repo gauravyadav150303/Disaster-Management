@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flood Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('flood(1).jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 3px orange;
+        position: relative;
+    }
+    .hero h1::before{
+        content: "FLOOD";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: lightblue;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px lightblue);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h2{
+        color: white;
+    }
+    .hero {
+      position: relative;
+      background-image: url('flood2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      filter: blur(1px);
+  }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+    .content {
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>FLOOD</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Stay calm and monitor weather updates from official sources.<br>
+      2. Move to higher ground or upper floors if flooding occurs.<br>
+      3. Turn off electricity and gas connections before evacuating.<br>
+      4. Keep an emergency kit ready with essentials like food, water, flashlight, and medicines.<br>
+      5. Drink only clean or boiled water to avoid infections.<br>
+      6. Help children, elderly, and differently-abled individuals during evacuation.<br>
+      7. Use waterproof bags to protect important documents.<br>
+      8. Stay indoors unless absolutely necessary.<br>
+      9. If you must walk through water, use a stick to check depth and obstacles.<br>
+      10. Follow evacuation orders and routes issued by authorities.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t walk or drive through floodwaters — they may be deeper or faster than they appear.<br>
+      2. Don’t use electrical appliances if you're wet or in standing water.<br>
+      3. Don’t consume water or food that has come into contact with floodwater.<br>
+      4. Don’t spread or believe in rumors — stay informed via official sources.<br>
+      5. Don’t ignore evacuation instructions from authorities.<br>
+      6. Don’t light candles or matches if you suspect a gas leak.<br>
+      7. Don’t leave pets or animals behind during evacuation.<br>
+      8. Don’t go near rivers, bridges, or large trees during heavy rain.<br>
+      9. Don’t re-enter your home until it's declared safe by officials.<br>
+      10. Don’t touch downed power lines — stay far away and report them.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Bottled drinking water (at least 3 liters per person per day)<br>
+      2. Non-perishable food (dry fruits, biscuits, canned food)<br>
+      3. Torch/flashlight with spare batteries<br>
+      4. First aid kit and essential personal medications<br>
+      5. Power bank and phone charger<br>
+      6. Battery-operated radio for emergency updates<br>
+      7. Waterproof pouch with ID proofs and important documents<br>
+      8. Extra clothes and rainwear<br>
+      9. Basic hygiene products: sanitizer, tissue, sanitary pads<br>
+      10. Cash in small denominations<br>
+      11. Emergency whistle, rope, and multipurpose knife<br>
+      12. Emergency contact list with local helpline numbers
+    </p>
+
+    <h2>Flood Resistant Home</h2>
+    <p>
+      1. Elevate electrical systems — including wiring, sockets, switches, and circuit breakers above potential flood levels.<br>
+      2. Use water-resistant building materials for walls, floors, and furniture.<br>
+      3. Install sump pumps with battery backup to remove accumulated water from basements.<br>
+      4. Build barriers (like floodwalls or levees) around your home if it’s in a flood-prone area.<br>
+      5. Seal basement walls with waterproofing compounds.<br>
+      6. Improve drainage around your home — keep gutters and storm drains clear.<br>
+      7. Elevate or relocate appliances such as washing machines and refrigerators.<br>
+      8. Anchor fuel tanks to prevent them from floating or tipping during floods.<br>
+      9. Store valuables and documents in waterproof, elevated containers.<br>
+      10. Landscape with native plants that absorb excess rainwater and reduce runoff.
+    </p>
+    <h2>Survival Skills</h2>
+<p>
+  1. Move to Higher Ground Immediately – Avoid low-lying areas.<br>
+  2. Avoid Walking or Driving Through Flood Water – Even shallow water can be dangerous.<br>
+  3. Disconnect Electrical Appliances – To avoid short circuits or electrocution.<br>
+  4. Listen to Weather Updates – Use battery-powered radio or phone.<br>
+  5. Stay Inside Unless Evacuation is Advised – Don’t roam unnecessarily.<br>
+  6. Use Life Jackets or Floatation Aids – Especially for kids or non-swimmers.<br>
+  7. Purify Water Before Drinking – Use purifiers or boil water.<br>
+  8. Avoid Contact with Floodwater – It may be contaminated.<br>
+  9. Store Essentials Where Water Won’t Reach – Food, medicine, documents.<br>
+  10. Help Neighbors and the Needy – Elderly or injured may need assistance.
+</p>
+<h2>Recovery and Resources</h2>
+<p>
+  1. Ensure Safety First – Check for hazards like gas leaks, electrical issues, or structural damage.<br>
+  2. Seek Financial Assistance – Apply for government aid, flood insurance, or disaster relief funds.<br>
+  3. Rebuild Homes and Property – Work with local authorities for safe rebuilding guidelines.<br>
+  4. Clean and Sanitize – Properly clean flood-damaged items to prevent mold and bacteria.<br>
+  5. Access Medical Assistance – Seek treatment for injuries, infections, or mental health support.<br>
+  6. Reconnect with Community – Join local support groups or recovery initiatives.<br>
+  7. Secure Temporary Housing – If your home is uninhabitable, explore shelters or relocation resources.<br>
+  8. Donate or Volunteer – Contribute to recovery efforts through donations or volunteer work.<br>
+  9. Stay Updated – Follow authorities for recovery steps and guidelines in your area.<br>
+  10. Be Patient – Recovery from floods can take time; stay resilient and seek help when needed.
+</p>
+<button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+  Go Back
+</button>
+  </div>
+</body>
+</html>
+
+  
+

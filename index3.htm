@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyclone Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('Cyclone.webp');
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px greenyellow;
+        position: relative;
+    }
+    .hero h1::before{
+        content: "CYCLONE ";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: lightblue;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px lightblue);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    .content{
+        background: transparent;
+    }
+    .hero {
+        position: relative;
+        background-image: url('cyclone2.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(1px);
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>CYCLONE </h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Listen to weather updates and alerts from official sources.<br>
+      2. Keep your mobile phone charged and emergency contacts saved.<br>
+      3. Store food and water for at least 3 days.<br>
+      4. Stay indoors and keep doors and windows securely shut.<br>
+      5. Turn off electrical mains and gas if instructed.<br>
+      6. Keep an emergency kit handy with torch, batteries, radio, etc.<br>
+      7. Move to a safe shelter if your area is declared unsafe.<br>
+      8. Help neighbors, elderly, and people with disabilities.<br>
+      9. Tie down or store loose outdoor objects like garbage bins, tools, etc.<br>
+      10. Stay away from coastal areas, beaches, and rivers.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t ignore cyclone warnings — act immediately.<br>
+      2. Don’t go outside or take shelter under trees during strong winds.<br>
+      3. Don’t use electrical appliances during a storm.<br>
+      4. Don’t spread or believe in rumors — follow official channels.<br>
+      5. Don’t drive or walk through flooded areas.<br>
+      6. Don’t leave pets behind during evacuation.<br>
+      7. Don’t light candles or matches if there's a gas leak.<br>
+      8. Don’t touch fallen power lines or broken poles.<br>
+      9. Don’t panic — remain calm and help others stay calm.<br>
+      10. Don’t return home unless advised by authorities.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Bottled water and dry food for 3 days<br>
+      2. Flashlight with extra batteries<br>
+      3. Portable radio with batteries<br>
+      4. First aid kit with essential medicines<br>
+      5. Important documents in a waterproof folder<br>
+      6. Power bank and mobile charger<br>
+      7. Emergency contact list<br>
+      8. Extra clothes and raincoat<br>
+      9. Cash in small denominations<br>
+      10. Hygiene items like sanitizer, soap, tissues<br>
+      11. Whistle and multi-purpose knife<br>
+      12. Blanket or thermal sheet<br>
+      13. Basic tools and rope
+    </p>
+
+    <h2>Cyclone Resistant Home</h2>
+    <p>
+      1. Reinforce roof structures to resist high winds.<br>
+      2. Install storm shutters or board up windows.<br>
+      3. Trim trees and branches near your house.<br>
+      4. Use cyclone straps or roof ties to secure roofs.<br>
+      5. Secure outdoor items like tanks, bins, and garden tools.<br>
+      6. Ensure doors and windows are tightly sealed.<br>
+      7. Elevate electrical wiring and appliances.<br>
+      8. Store sandbags to divert water away from home.<br>
+      9. Repair cracks or leaks in walls and roofs.<br>
+      10. Identify the strongest room in your house for shelter during cyclones.
+    </p>
+    <h2>Survival Skills</h2>
+<p>
+  1. Stay Indoors and Away from Windows – Flying debris is dangerous.<br>
+  2. Keep Your Disaster Kit Handy – Flashlight, food, medicine, etc.<br>
+  3. Turn Off Gas and Electricity – To prevent leaks and fire hazards.<br>
+  4. Stay Tuned to Weather Bulletins – Use radio or mobile alerts.<br>
+  5. Evacuate When Officially Advised – Don’t delay or argue.<br>
+  6. Store Drinking Water – Water lines may be contaminated.<br>
+  7. Keep Important Documents Safe – In waterproof covers.<br>
+  8. Use Heavy Furniture to Block Wind Entry Points – Doors/windows.<br>
+  9. Mark a Family Meeting Point – In case of separation.<br>
+  10. Stay Calm and Offer Help – Especially to children and elderly.
+</p>
+<h2>Recovery and Resources</h2>
+<p>
+  1. Check for Structural Safety – Inspect homes for damage, collapse risk, or structural issues.<br>
+  2. Access Financial Help – Apply for government aid, insurance, or relief funds for rebuilding.<br>
+  3. Seek Medical Aid – Attend to any physical injuries or seek psychological counseling for trauma.<br>
+  4. Rebuild Livelihoods – Support local businesses, start rebuilding efforts with government programs.<br>
+  5. Reconnect with Family – Ensure everyone is accounted for and receive mental health support.<br>
+  6. Secure Temporary Shelter – Use shelters or government relief programs if home is uninhabitable.<br>
+  7. Volunteer and Donate – Offer your help in relief operations or donate to organizations in need.<br>
+  8. Be Aware of Contaminants – Ensure water and food supplies are safe, disinfect affected areas.<br>
+  9. Keep Communication Open – Stay informed through local media and emergency channels.<br>
+  10. Support Recovery Initiatives – Participate in rebuilding the community and improving resilience.
+</p>
+<button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+  Go Back
+</button>
+  </div>
+</body>
+</html>
+

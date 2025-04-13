@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landslide Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('landslide.webp');
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .hero {
+        position: relative;
+        background-image: url('landslide2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(1px);
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            background-image: url(''); }
+        }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px orangered;
+        position: relative;
+    }
+    .hero h1::before{
+        content: "LANDSLIDE";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: gray;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px lightblue);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+    .content{
+        background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>LANDSLIDE</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Stay alert to weather conditions and warnings from local authorities.<br>
+      2. Evacuate immediately if landslides are imminent, especially in high-risk areas.<br>
+      3. Move to higher ground or a stable, safe location.<br>
+      4. Follow evacuation orders and use designated evacuation routes.<br>
+      5. Keep away from steep slopes or areas prone to landslides.<br>
+      6. Stay indoors until authorities confirm it is safe to leave.<br>
+      7. If trapped, try to signal for help by using loud noises or bright colors.<br>
+      8. Keep a first aid kit on hand for any injuries.<br>
+      9. Protect your head and neck in case of falling debris.<br>
+      10. Stay informed by listening to local radio or mobile weather alerts.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t stand near steep slopes, cliffs, or riverbanks during or after heavy rain.<br>
+      2. Don’t drive in areas prone to landslides or in unstable terrain.<br>
+      3. Don’t attempt to return to your home or work until declared safe.<br>
+      4. Don’t try to cross bridges or flood-prone roads if you suspect a landslide.<br>
+      5. Don’t ignore evacuation orders from authorities.<br>
+      6. Don’t use electrical appliances if water or debris has entered your home.<br>
+      7. Don’t disturb or move injured individuals unless necessary for safety.<br>
+      8. Don’t rely on rumors – always check official sources for information.<br>
+      9. Don’t approach damaged infrastructure like collapsed bridges or buildings.<br>
+      10. Don’t drive through areas with debris until authorities clear the route.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Bottled drinking water (at least 3 liters per person per day)<br>
+      2. Non-perishable food (granola bars, canned food)<br>
+      3. Torch/flashlight with spare batteries<br>
+      4. First aid kit and essential personal medications<br>
+      5. Power bank and phone charger<br>
+      6. Battery-operated radio for emergency updates<br>
+      7. Waterproof pouch with ID proofs and important documents<br>
+      8. Extra clothes and rainwear<br>
+      9. Basic hygiene products: sanitizer, tissue, sanitary pads<br>
+      10. Cash in small denominations<br>
+      11. Emergency whistle, rope, and multipurpose knife<br>
+      12. Emergency contact list with local helpline numbers
+    </p>
+
+    <h2>Landslide Resistant Home</h2>
+    <p>
+      1. Build retaining walls around your home in high-risk areas.<br>
+      2. Use erosion-control techniques to prevent soil movement.<br>
+      3. Install proper drainage systems to redirect water away from your property.<br>
+      4. Avoid planting trees or heavy vegetation too close to slopes or cliffs.<br>
+      5. Avoid building homes in landslide-prone areas, especially near steep slopes.<br>
+      6. Reinforce the structure of your house with strong materials to withstand pressure.<br>
+      7. Use geo-textiles or netting on slopes to stabilize loose soil.<br>
+      8. Keep gutters and drains clear to avoid water accumulation and soil erosion.<br>
+      9. Regularly inspect the property for signs of soil movement or cracking.<br>
+      10. Consult with experts to assess the stability of the land before construction.
+    </p>
+
+    <h2>Survival Skills</h2>
+    <p>
+      1. Move to Higher Ground Immediately – Avoid low-lying areas.<br>
+      2. Don’t Walk or Drive in Landslide-Prone Areas – These areas are unsafe during heavy rains.<br>
+      3. Listen to Weather Updates – Use battery-powered radios or phones.<br>
+      4. Stay Inside Unless Evacuation is Advised – Don’t roam unnecessarily.<br>
+      5. Protect Your Head and Neck – Shield yourself from falling debris.<br>
+      6. Help Those in Need – Assist the elderly, children, or anyone who needs help evacuating.<br>
+      7. Use Emergency Signals – In case you’re trapped, signal for help with a whistle or bright clothing.<br>
+      8. Purify Water Before Drinking – Use water filters or boil water if necessary.<br>
+      9. Avoid Areas with Cracked Foundations – These are likely to be unstable.<br>
+      10. Be Ready to Evacuate Quickly – Keep essentials packed in an emergency kit.
+    </p>
+
+    <h2>Recovery and Resources</h2>
+    <p>
+      1. Ensure Safety First – Check for hazards like gas leaks, electrical issues, or structural damage.<br>
+      2. Seek Financial Assistance – Apply for government aid, insurance, or disaster relief funds.<br>
+      3. Rebuild Homes and Property – Work with local authorities for safe rebuilding guidelines.<br>
+      4. Clean and Sanitize – Properly clean landslide-damaged items to prevent mold and bacteria.<br>
+      5. Access Medical Assistance – Seek treatment for injuries, infections, or mental health support.<br>
+      6. Reconnect with Community – Join local support groups or recovery initiatives.<br>
+      7. Secure Temporary Housing – If your home is uninhabitable, explore shelters or relocation resources.<br>
+      8. Donate or Volunteer – Contribute to recovery efforts through donations or volunteer work.<br>
+      9. Stay Updated – Follow authorities for recovery steps and guidelines in your area.<br>
+      10. Be Patient – Recovery from landslides can take time; stay resilient and seek help when needed.
+    </p>
+    <button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+      Go Back
+    </button>
+  </div>
+</body>
+</html>

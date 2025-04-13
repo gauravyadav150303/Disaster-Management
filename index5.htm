@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forest Fire Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('forestfire1.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: lightblue;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid rgb(94, 247, 94);
+        border-top: 5px solid rgb(94, 247, 94);
+        background: linear-gradient(to right,lightblue, lightblue);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .hero {
+        position: relative;
+        background-image: url('forestfire.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(1px);
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            background-image: url(''); }
+        }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px lightblue;
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    .hero h1::before{
+        content: "FOREST FIRE";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        color: gray;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px #F5F5F5);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: transparent;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 25px  #ff33cc	);
+        }
+        50%{
+            filter: drop-shadow(0 0 10px 	#ff33cc);
+        }
+        100%{
+            filter: drop-shadow(0 0 25px 	#ff33cc);
+        }
+    }
+    .content{
+        background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>FOREST FIRE</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Stay calm and follow official fire evacuation orders.<br>
+      2. Evacuate immediately if instructed to do so, and move to a safe area.<br>
+      3. Close all doors and windows to prevent smoke from entering your home.<br>
+      4. Use a wet cloth to cover your nose and mouth to avoid inhaling smoke.<br>
+      5. Stay indoors unless evacuation is absolutely necessary.<br>
+      6. Follow evacuation routes; do not take shortcuts.<br>
+      7. Keep an emergency kit with essentials like food, water, medications, and a flashlight.<br>
+      8. Stay updated with fire reports through a battery-powered radio or mobile.<br>
+      9. Protect pets and livestock; bring them to safety.<br>
+      10. Alert neighbors and vulnerable individuals to evacuate if needed.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t stay in your home if you are instructed to evacuate.<br>
+      2. Don’t use elevators during evacuation; always use stairs.<br>
+      3. Don’t drive through areas with heavy smoke or fire.<br>
+      4. Don’t attempt to fight the fire unless trained and equipped.<br>
+      5. Don’t block evacuation routes; leave immediately when ordered.<br>
+      6. Don’t leave pets behind during evacuation.<br>
+      7. Don’t use open flames or flammable devices during a fire emergency.<br>
+      8. Don’t drink contaminated water from the fire-affected areas.<br>
+      9. Don’t ignore evacuation orders; they’re issued for your safety.<br>
+      10. Don’t attempt to return home until it’s declared safe by authorities.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Bottled drinking water (at least 3 liters per person per day)<br>
+      2. Non-perishable food (granola bars, canned food)<br>
+      3. Torch/flashlight with spare batteries<br>
+      4. First aid kit and essential personal medications<br>
+      5. Power bank and phone charger<br>
+      6. Battery-operated radio for emergency updates<br>
+      7. Wet cloths or masks for smoke protection<br>
+      8. Extra clothes and sturdy shoes for evacuation<br>
+      9. Basic hygiene products: sanitizer, tissue, sanitary pads<br>
+      10. Emergency contact list with local helpline numbers<br>
+      11. Important documents (stored in waterproof bags)<br>
+      12. Cash in small denominations<br>
+      13. Pet carriers and food for pets
+    </p>
+
+    <h2>Fire-Resistant Home</h2>
+    <p>
+      1. Create a defensible space around your home by clearing dead vegetation and debris.<br>
+      2. Use fire-resistant roofing materials to protect your home.<br>
+      3. Install mesh screens on vents to prevent sparks from entering your home.<br>
+      4. Use fire-resistant building materials for your walls, windows, and doors.<br>
+      5. Keep trees and shrubs trimmed to reduce fire risk near your property.<br>
+      6. Store firewood and other flammable materials away from your home.<br>
+      7. Maintain a firebreak around your property to reduce fire spread.<br>
+      8. Regularly clean gutters and roofs to remove leaves and debris.<br>
+      9. Install a sprinkler system to protect your property during a fire.<br>
+      10. Build a water source, such as a pond or rainwater collection system, for firefighting.
+    </p>
+
+    <h2>Survival Skills</h2>
+    <p>
+      1. Evacuate immediately if instructed by authorities – Don’t wait until the fire is close.<br>
+      2. Stay low to the ground to avoid smoke inhalation if trapped.<br>
+      3. Cover your nose and mouth with a wet cloth to protect from smoke.<br>
+      4. Stay inside your vehicle if trapped and drive away as soon as it is safe.<br>
+      5. Avoid using a vehicle if roads are blocked or fire is nearby.<br>
+      6. Use a damp towel to seal gaps in doors and windows if you cannot evacuate.<br>
+      7. Stay hydrated, especially if you are in an evacuation shelter.<br>
+      8. Keep pets in carriers and make sure they are with you during evacuation.<br>
+      9. Help vulnerable individuals and neighbors evacuate if possible.<br>
+      10. Stay updated with evacuation routes and fire reports through radio or mobile alerts.
+    </p>
+
+    <h2>Recovery and Resources</h2>
+    <p>
+      1. Ensure Safety First – Check for hazards like gas leaks, electrical issues, or structural damage.<br>
+      2. Seek Financial Assistance – Apply for government aid, fire insurance, or disaster relief funds.<br>
+      3. Rebuild Homes and Property – Work with local authorities for safe rebuilding guidelines.<br>
+      4. Clean and Sanitize – Properly clean fire-damaged items to prevent hazards like smoke residue.<br>
+      5. Access Medical Assistance – Seek treatment for burns, injuries, or mental health support.<br>
+      6. Reconnect with Community – Join local support groups or recovery initiatives.<br>
+      7. Secure Temporary Housing – If your home is uninhabitable, explore shelters or relocation resources.<br>
+      8. Donate or Volunteer – Contribute to recovery efforts through donations or volunteer work.<br>
+      9. Stay Updated – Follow authorities for recovery steps and guidelines in your area.<br>
+      10. Be Patient – Recovery from forest fires can take time; stay resilient and seek help when needed.
+    </p>
+    <button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+      Go Back
+    </button>
+  </div>
+</body>
+</html>

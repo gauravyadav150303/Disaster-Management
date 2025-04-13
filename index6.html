@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earthquake Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('earthquake1.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(1px);
+      z-index: -2;
+    }
+    .hero {
+        position: relative;
+        background-image: url('earthquake2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(0.1px);
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            background-image: url('path/to/your-small-image.jpg'); /* Use a smaller image for mobile */
+        }
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px #FFD700;
+        position: relative;
+    }
+    
+    .hero h1::before{
+        content: "EARTHQUAKE";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: white; 
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+    }
+    
+    .hero h1:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 3px #FFD700);
+    }
+    
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    .content{
+        background-color: transparent;
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>EARTHQUAKE</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>1. During an Earthquake
+        Drop, Cover, and Hold On – Drop to the ground, take cover under a sturdy table or furniture, and hold on until shaking stops.
+        <br>
+        2. Stay Indoors if you are already inside. Most injuries occur when people try to move to another location.
+        <br>
+        3. Protect Your Head and Neck with your arms or something soft like a pillow or book.
+        <br>
+        4. Stay Away from Windows and Glass – These can shatter and cause injury.
+        <br>
+        5. Turn Off Gas and Electricity only if you smell gas or see damaged wires.
+        <br>
+        6. Use Stairs Instead of Elevators – Elevators may become stuck or malfunction.
+        <br>
+        7. Remain Calm and reassure others around you.
+        <br>
+        8. If Outdoors, move to an open area away from buildings, trees, streetlights, and utility wires.
+        <br>
+        9. If Driving, stop your vehicle in a clear area away from bridges, overpasses, and power lines. Stay inside until the shaking stops.</p>
+
+    <h2>Dont's</h2>
+    <p>1. Don’t Run Outside – You are more likely to be injured by falling debris.
+        <br>
+       2.  Don’t Use Elevators – Power may fail, trapping you inside.
+        <br>
+       3. Don’t Stand Near Windows, Mirrors, or Heavy Objects that could fall.
+        <br>
+       4. Don’t Light Candles or Matches if you suspect a gas leak.
+        <br>
+       5. Don’t Panic or Rush – It can cause stampedes or accidents.
+        <br>
+       6. Don’t Go Near Coastal Areas immediately after the shaking stops—risk of tsunamis.
+        <br>
+       7. Don’t Use Your Phone Unnecessarily – Keep lines open for emergency use.
+        <br>
+       8. Don’t Believe or Spread Rumors – Rely on official updates only.</p>
+
+    <h2>Essential Kit</h2>
+    <p> 1. Drinking Water – At least 3 liters per person per day (for at least 3 days)
+        <br>
+        2. Ready-to-Eat Food – Non-perishable food items like energy bars, dry fruits, canned food
+        <br>
+        3. Flashlight – Preferably LED with extra batteries
+        <br>
+        4. Battery-powered or Hand-crank Radio – For emergency news and alerts
+        <br>
+        5. Power Bank – Fully charged, preferably solar-powered
+        <br>
+        6. Basic First Aid Kit – Bandages, antiseptic cream, pain relievers, gloves
+        <br>
+        7. Essential Medicines – For diabetes, blood pressure, asthma, etc.
+        <br>
+        8. Copies of Important Documents – ID proof, medical records, insurance (in a waterproof bag)
+        <br>
+        9. Hygiene Supplies – Hand sanitizer, tissues, soap, sanitary pads
+        <br>
+        10. Multi-purpose Tool – Swiss knife or similar for basic cutting and repairs
+        <br>
+        11. Emergency Cash – In small denominations and coins
+        <br>
+        12. Extra Clothes & Blanket – One set of clothes and a thermal or space blanket
+        <br>
+        13. Sturdy Footwear – Strong shoes or sandals.
+        <br>
+        14. Waterproof Matches or Lighter – For emergency heating or lighting
+        <br>
+        15. Small Fire Extinguisher – For basic fire safety</p>
+
+    <h2>Survival Skills</h2>
+    <p>1. First Aid & Basic Medical Care
+       <li> Ability to treat injuries like cuts, broken bones, and burns.</li>
+        <br>
+       <li>Knowing how to perform CPR and stop bleeding.</li>
+       <br>
+       <li>Using basic supplies from a first aid kit to stabilize victims until help arrives.</li>
+       <br>
+        <h3>2. Situational Awareness & Hazard Recognition</h3>
+        <br>
+        <li>Identifying unsafe structures, gas leaks, exposed wires, and unstable debris.</li>
+        <br>
+        <li>Knowing when it’s safe to stay or when to evacuate.</li>
+        <br>
+        <li>Avoiding panic zones like crowded stairwells or blocked exits.</li>
+        <br>
+        <h3>3. Communication & Information Gathering</h3>
+        <br>
+        <li> Using mobile phones, radios, or apps to get official updates.</li>
+        <br>
+        <li> Contacting loved ones or emergency responders effectively.</li>
+        <br>
+        <li> Sharing clear and calm information with others in the area.</li>
+        <br>
+       <h3> 4. Resourcefulness & Improvisation</h3>
+        <br>
+        <li>  Finding clean water, food, and shelter if supply lines are disrupted.</li>
+        <br>
+        <li> Using available materials to build temporary shelter or carry injured people.</li>
+        <br>
+        <li> Adapting quickly to new, unfamiliar conditions.</li>
+        <br>
+       <h3> 5. Emotional Resilience & Decision-Making Under Pressure</h3>
+        <br>
+        <li> Staying calm and focused in a chaotic environment.</li>
+        <br>
+        <li> Making logical, potentially life-saving decisions despite fear or confusion.</li>
+        <br>
+        <li>  Providing emotional support to others — especially children or the elderly.</li></p>
+        <h2>Earthquake-Resistant Home:</h2>
+    <ul><br>
+        <li><strong>Secure Heavy Furniture and Appliances:<br></strong>
+             Fasten large furniture, bookshelves, and appliances (like refrigerators, TVs, and microwaves) to the wall with brackets or straps.</li><br>
+        <li><strong>Anchor Large Items:<br></strong> Anchor heavy items such as televisions, bookcases, and cabinets to prevent them from toppling over during shaking.</li><br>
+        <li><strong>Install Latches on Cabinets:<br></strong> Use safety latches to secure cabinets and drawers, preventing them from flying open during an earthquake and spilling their contents.</li><br>
+        <li><strong>Retrofitting Your Foundation:<br></strong> If you live in a house with a crawl space, consider retrofitting your foundation with steel brackets or additional reinforcement to prevent shifting during an earthquake.</li><br>
+        <li><strong>Use Flexible Gas Lines:<br></strong> Replace rigid gas lines with flexible ones that won’t break during shaking, reducing the risk of fires or gas leaks.</li><br>
+        <li><strong>Install Shatterproof Window Films:<br></strong> Apply shatterproof window films or install tempered glass to reduce the risk of injury from broken glass during the quake.</li><br>
+        <li><strong>Reinforce Doors and Windows:<br></strong> Ensure that doors and windows are properly reinforced and can open easily during an evacuation. Make sure they are securely framed.</li><br>
+        <li><strong>Strengthen Roof and Wall Connections:<br></strong> Reinforce the connections between your home’s roof and walls to prevent the structure from collapsing in a major quake.</li><br>
+        <li><strong>Secure Water Heaters and Gas Tanks:<br></strong> Strap water heaters and other large equipment like gas tanks to walls to prevent them from tipping over during an earthquake.</li><br>
+        <li><strong>Check the Structural Integrity of the Home:<br></strong> Consult with a professional engineer to inspect and upgrade the structural integrity of your home, including the foundation and support beams.</li><br>
+        <li><strong>Create an Emergency Exit Plan:<br></strong> Ensure you have multiple exit routes planned and practice drills with your family. This includes checking that doors and windows open easily and are not blocked.</li>
+    </ul>
+    <h2>Recovery & Resources</h2>
+  <ul><br>
+    <li>Know the locations of nearby emergency shelters and medical facilities.</li><br>
+    <li>Document any structural damage for insurance and repair needs.</li><br>
+    <li>Prioritize mental and emotional support to help yourself and others recover.</li><br>
+    <li>Familiarize yourself with government and non-profit recovery programs.</li><br>
+    <li>Establish channels for ongoing communication with local authorities and community groups.</li>
+  </ul>
+  <button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+    Go Back
+  </button>
+  </div>
+
+</body>
+</html>

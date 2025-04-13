@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thunderstorm Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('thunderstorm.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px lightblue;
+        position: relative;
+    }
+    .hero h1::before{
+        content: "THUNDERSTORM";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: lightblue;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px lightblue);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    .content{
+            background: transparent;
+    }
+    .hero {
+        position: relative;
+        background-image: url('thunderstorm1.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(1px);
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>THUNDERSTORM</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Stay indoors and avoid travel unless absolutely necessary.<br>
+      2. Unplug electrical appliances to avoid damage from power surges.<br>
+      3. Stay away from windows and doors.<br>
+      4. Use a battery-powered radio for weather alerts.<br>
+      5. If outside, seek shelter in a sturdy building or vehicle.<br>
+      6. Close all windows and secure loose objects outside.<br>
+      7. Avoid using water (showers, taps) during lightning activity.<br>
+      8. Help children and elderly to remain calm and safe.<br>
+      9. Charge mobile devices before the storm worsens.<br>
+      10. Follow local advisories and emergency instructions.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t stand under trees or open shelters during lightning.<br>
+      2. Don’t touch metal objects like fences, poles, or wires.<br>
+      3. Don’t take shelter in open fields or near water bodies.<br>
+      4. Don’t use landline phones during a thunderstorm.<br>
+      5. Don’t operate electrical appliances unless necessary.<br>
+      6. Don’t drive through flooded roads or underpasses.<br>
+      7. Don’t attempt to take photos of lightning from unsafe areas.<br>
+      8. Don’t ignore weather warnings or delay taking action.<br>
+      9. Don’t rely on myths (like rubber tires protecting cars).<br>
+      10. Don’t spread rumors – share verified updates only.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Torch and spare batteries<br>
+      2. Battery-powered radio<br>
+      3. First-aid kit<br>
+      4. Bottled drinking water and non-perishable food<br>
+      5. Mobile phone and power bank<br>
+      6. Important documents in waterproof bag<br>
+      7. Emergency contacts list<br>
+      8. Extra clothes and blankets<br>
+      9. Multipurpose tool and whistle<br>
+      10. Face masks and sanitizer<br>
+      11. Emergency cash<br>
+      12. Medicines for existing health conditions
+    </p>
+
+    <h2>Thunderstorm Resistant Home</h2>
+    <p>
+      1. Install lightning rods and surge protectors for safety.<br>
+      2. Trim trees and remove weak branches near your home.<br>
+      3. Secure or store outdoor furniture and items.<br>
+      4. Reinforce roofs, windows, and doors.<br>
+      5. Elevate electrical systems if you're in flood-prone areas.<br>
+      6. Install water drainage systems to prevent waterlogging.<br>
+      7. Keep emergency lighting ready and accessible.<br>
+      8. Have a designated safe room away from windows.<br>
+      9. Maintain your backup power sources.<br>
+      10. Train your family in emergency drills.
+    </p>
+    <h2>Survival Skills</h2>
+<p>
+  1. Stay Calm and Think Clearly – Panic can lead to poor decisions.<br>
+  2. Identify Safe Zones Indoors – Preferably an interior room without windows.<br>
+  3. Know How to Shut Off Utilities – Gas, water, and electricity if needed.<br>
+  4. Practice Basic First Aid – Be able to treat cuts, burns, and shock.<br>
+  5. Use a Battery-powered Radio – Stay updated on weather alerts and emergency news.<br>
+  6. Signal for Help – Use a whistle, flashlight, or phone if trapped.<br>
+  7. Ration Supplies – Conserve food and water if the storm lasts long.<br>
+  8. Avoid Using Electrical Appliances – Prevent electrocution during lightning.<br>
+  9. Understand Lightning Safety – Stay low and away from conductors if caught outside.<br>
+  10. Help Others – Especially children, elderly, or injured during the emergency.
+</p>
+<h2>Recovery and Resources</h2>
+<p>
+  1. Inspect for Damage – Check for downed trees, power lines, or structural damage.<br>
+  2. Restore Power – Report power outages to local utilities and wait for updates.<br>
+  3. Seek Medical Assistance – Address injuries or trauma, including emotional recovery.<br>
+  4. Repair Property – Begin repairs as soon as it is safe to do so, following local regulations.<br>
+  5. Secure Safe Drinking Water – Make sure your water supply is safe after a storm.<br>
+  6. Rebuild Community – Volunteer in local clean-up efforts and support affected individuals.<br>
+  7. Provide Mental Health Support – Seek counseling or help others with stress or post-traumatic stress.<br>
+  8. Access Financial Aid – Apply for emergency relief funds or insurance claims.<br>
+  9. Stay Informed – Follow authorities’ guidelines on recovery, including when it's safe to go back outdoors.<br>
+  10. Prevent Future Damage – Consider stormproofing your home and preparing for future storms.
+</p>
+<button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+  Go Back
+</button>
+  </div>
+</body>
+</html>

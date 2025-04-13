@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tornado Safety</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(25, 25, 25);
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('tornado.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -2;
+    }
+    .explore-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      background: #007BFF;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .content h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        color: #ff6f61;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px;
+        border-bottom: 5px solid #ff6f61;
+        border-top: 5px solid #ff6f61;
+        background: linear-gradient(to right, #ff6f61, #ff9b85);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   .hero  h1{
+        font-size: 8rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .hero h1{
+        color: transparent;
+        -webkit-text-stroke: 2px orange;
+        position: relative;
+    }
+    .hero h1::before{
+        content: "TORNADO";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: lightblue;
+        border-right: 0px solid lightblue;
+        border-left: 0px solid lightblue;
+        transition: 1s ease-in-out;
+
+    }
+    .hero h1:hover::before{
+       width: 100%;
+       filter: drop-shadow(0 0 25px lightblue);
+    }
+
+    .content {
+      background-color: rgb(25, 25, 25);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+.content li{
+    color: white;
+    animation: glowp 2s linear infinite;
+}
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      color: white;
+      animation: glowp 2s linear infinite;
+    }
+    .content h3{
+        color: white;
+    }
+    .content{
+        background: transparent;
+    }
+    .hero {
+        position: relative;
+        background-image: url('tornado1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        filter: blur(1px);
+    }
+    @keyframes glowp{
+        0%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+        50%{
+            filter: drop-shadow(0 0 5px lightpink);
+        }
+        100%{
+            filter: drop-shadow(0 0 13px lightpink);
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="hero">
+    <h1>TORNADO</h1>
+  </div>
+
+  <div class="content">
+    <h2>Do's</h2>
+    <p>
+      1. Take shelter immediately in a basement or an interior room without windows.<br>
+      2. Monitor official weather warnings and alerts.<br>
+      3. Keep a battery-powered radio or mobile with emergency alerts enabled.<br>
+      4. Cover your head and neck with your arms or a sturdy object.<br>
+      5. If you're in a vehicle, drive to the nearest shelter if possible.<br>
+      6. Lie flat in a low spot (like a ditch) if there's no shelter nearby.<br>
+      7. Keep your emergency kit ready and accessible.<br>
+      8. Reinforce windows and doors ahead of tornado season.<br>
+      9. Help family members, especially elderly or kids, take safe positions.<br>
+      10. Stay indoors until authorities say it's safe.
+    </p>
+
+    <h2>Don'ts</h2>
+    <p>
+      1. Don’t stay in mobile homes or temporary shelters during a tornado.<br>
+      2. Don’t open windows – it won't "equalize pressure" and may cause injury.<br>
+      3. Don’t try to outrun a tornado in a car unless there's no other choice.<br>
+      4. Don’t take shelter under overpasses – wind can be stronger there.<br>
+      5. Don’t ignore tornado sirens or alerts.<br>
+      6. Don’t use elevators – power may fail.<br>
+      7. Don’t stand near windows or outside walls.<br>
+      8. Don’t go outside to film or photograph the tornado.<br>
+      9. Don’t spread misinformation – follow only trusted sources.<br>
+      10. Don’t return to damaged structures without inspection.
+    </p>
+
+    <h2>Essential Kit</h2>
+    <p>
+      1. Flashlight with batteries<br>
+      2. First-aid kit and basic medicines<br>
+      3. Drinking water and ready-to-eat food for 3 days<br>
+      4. Battery-operated radio<br>
+      5. Power bank and phone charger<br>
+      6. Emergency whistle<br>
+      7. Important documents in waterproof pouch<br>
+      8. Multi-tool and duct tape<br>
+      9. Gloves and sturdy shoes<br>
+      10. Blanket or thermal sheets<br>
+      11. Extra clothes and hygiene items<br>
+      12. Face masks and hand sanitizer<br>
+      13. Emergency contact list and evacuation plan
+    </p>
+
+    <h2>Tornado Resistant Home</h2>
+    <p>
+      1. Build or identify a tornado-safe room or storm shelter.<br>
+      2. Reinforce garage doors and roof connections.<br>
+      3. Use impact-resistant windows or install shutters.<br>
+      4. Anchor mobile homes to the ground securely.<br>
+      5. Secure outdoor furniture and heavy items during alerts.<br>
+      6. Store your emergency kit in the safest room.<br>
+      7. Regularly inspect and maintain your shelter area.<br>
+      8. Clear debris from around your home to reduce flying hazards.<br>
+      9. Conduct tornado drills with family.<br>
+      10. Stay connected to weather alert systems.
+    </p>
+    <h2>Survival Skills</h2>
+<p>
+  1. Take Shelter Immediately – In a basement or interior room without windows.<br>
+  2. Get Under a Sturdy Object – Table, workbench, or mattress.<br>
+  3. Protect Your Head – Use helmets, cushions, or arms.<br>
+  4. Stay Low and Crouch – Avoid standing near doors or windows.<br>
+  5. Don’t Stay in Cars or Mobile Homes – They’re unsafe during tornadoes.<br>
+  6. Use Weather Alerts – Tornado sirens or mobile warnings.<br>
+  7. Avoid Overpasses or Bridges – Wind speed increases in these areas.<br>
+  8. After Tornado Passes, Watch for Hazards – Downed wires, gas leaks.<br>
+  9. Keep Phone Charged – For updates and emergency calls.<br>
+  10. Stay Put Until Officials Declare It Safe – Tornadoes can come in waves.
+</p>
+<h2>Recovery and Resources</h2>
+<p>
+  1. Prioritize Mental Health – Seek counseling, support groups, or self-care practices.<br>
+  2. Access Financial Assistance – Government aid, unemployment benefits, and relief funds.<br>
+  3. Rebuild Social Connections – Reconnect with family, friends, and communities.<br>
+  4. Get Vaccinated – Protect yourself and others from ongoing or future health risks.<br>
+  5. Support Local Businesses – Buy locally or donate to help businesses recover.<br>
+  6. Stay Informed – Keep up with health guidelines and recovery plans from officials.<br>
+  7. Foster Resilience – Build a routine, stay active, and practice positive thinking.<br>
+  8. Take Advantage of Education and Training – Upskill to increase job opportunities.<br>
+  9. Volunteer or Donate – Help those affected by the pandemic with time or resources.<br>
+  10. Be Patient and Compassionate – Recovery takes time; support each other through the process.
+</p>
+<button class="explore-btn" onclick="window.open('http://127.0.0.1:5500/Event%20js/slidestyle.html', '_blank')">
+  Go Back
+</button>
+  </div>
+</body>
+</html>
